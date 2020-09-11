@@ -1,0 +1,38 @@
+/* --------------------------------- Colors --------------------------------- */
+
+/* Palette */
+$oxford-blue: #2b3945;
+$ebony-clay: #202c37;
+$woodsmoke: #111517;
+$gray: #858585;
+$alabaster: #fafafa;
+$white: #ffffff;
+
+/* --------------------------------- Themes --------------------------------- */
+
+html {
+  --background-color: #{$alabaster};
+  --elements-color: #{$white};
+  --input-color: #{$gray};
+  --text-color: #{$woodsmoke};
+  --skeleton-color: #{mix(white, black, 90%)};
+  --accent-skeleton-color: #{mix(white, black, 93%)};
+
+  &.dark {
+    --background-color: #{$ebony-clay};
+    --elements-color: #{$oxford-blue};
+    --input-color: #{$gray};
+    --text-color: #{$white};
+    --skeleton-color: var(--elements-color);
+    --accent-skeleton-color: #{$ebony-clay};
+  }
+}
+
+/* ------------------------------- Typography ------------------------------- */
+
+/* system typefaces */
+$sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
+$font-size: 14px;
+$detail-font-size: 16px;
